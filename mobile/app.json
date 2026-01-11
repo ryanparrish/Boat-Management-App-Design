@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Float Plan",
+    "slug": "float-plan-app",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a192f"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.floatplan.app",
+      "config": {
+        "googleMapsApiKey": "AIzaSyCmR-rvBwnZoN3XGfY_zE_TfgQ51dX62DQ"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a192f"
+      },
+      "package": "com.floatplan.app",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCmR-rvBwnZoN3XGfY_zE_TfgQ51dX62DQ"
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#0ea5e9"
+        }
+      ],
+      "expo-asset",
+      "expo-font",
+      "@react-native-community/datetimepicker"
+    ]
+  }
+}
